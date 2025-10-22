@@ -7,7 +7,7 @@ It contains all the small programs, exercises, and experiments I’ve created wh
 ---
 
 ## 📂 Structure
-learning-projects/ ├── python/ │   ├── basics/ │   ├── oop/ │   └── mini-projects/ └── ...
+learning-projects/ ├── python/ │   ├── basics/ │   ├── advance/ │   └── mini-projects/ └── ...
 
 Each section includes practice code, mini-projects, and experiments that help me understand how things really work under the hood.
 
