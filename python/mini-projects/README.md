@@ -7,7 +7,7 @@ This directory contains a collection of small, self-contained Python projects, p
 ### 1. Calculator (`calculator.py`)
 
 #### Description
-A simple command-line calculator application that performs basic arithmetic operations (addition, subtraction, multiplication, division, floor division, exponents, remainder).
+A simple command-line calculator application that performs basic arithmetic operations (addition, subtraction, multiplication, division, floor division, exponents, remainder on two numbers).
 
 #### How to Run
 To run the calculator, navigate to this directory in your terminal and execute:
