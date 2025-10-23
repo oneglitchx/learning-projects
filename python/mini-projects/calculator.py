@@ -8,9 +8,19 @@ def welcome():
 
 # Taking user inputs for the numbers and the operator
 def inputs():
-    number1 = int(input("enter the first number: ".title()))
-    operation = input("enter the operator: ".title())
-    number2 = int(input("enter the second number: ".title()))
+    num = input("enter the first number: (press 'q' to quit calculator)".title().replace("Q","q"))
+    if num == "q" :
+        return "quit", None, None
+    else:
+        try:
+            number1 = int(num)
+            operation = input("enter the operator: ".title())
+            number2 = int(input("enter the second number: ".title()))
+
+        except ValueError:
+            print("Enter the valid values for the numbers i.e digits and operator i.e (+,-,*,/,//,%,**)")
+            return None, None, None
+
     return number1, operation, number2
     
     
@@ -33,10 +43,16 @@ def logic(number1 , operation, number2):
     else:
         print("this calculator only supports (+ 'addition',- 'subtraction',* 'multiplication',/ 'division',// 'floor division',% 'modulo',** 'exponent')".title())
 # Output for the result
+while True:
+    welcome()
+    num1, ope , num2 = inputs()
+    if num1 == "quit":
+        print("Exiting the calculator.....")
+        break
+    if num1 == None:
+        continue
 
-welcome()
-num1, ope , num2 = inputs()
-logic(num1, ope , num2)
+    logic(num1, ope , num2)
 
 """ 
 The return keyword in functions with multiple variables gives a tuple and the function itself
