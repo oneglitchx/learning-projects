@@ -20,6 +20,23 @@ python calculator.py
 - Handles integer and floating-point numbers.
 - User-friendly command-line interface.
 
+### 2. To-Do List Application (`todo_list.py`)
+
+#### Description
+A command-line to-do list application that allows users to manage their daily tasks. This project is great for practicing list manipulation and user input handling.
+
+#### How to Run
+```bash
+python todo_list.py
+```
+
+#### Features
+- View all tasks in the to-do list.
+- Add a new task to the list.
+- Mark a task as completed.
+- Remove a task from the list.
+
+
 ### Project Template
 
 Use this template for documenting new mini-projects:
