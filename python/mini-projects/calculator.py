@@ -13,9 +13,9 @@ def inputs():
         return "quit", None, None
     else:
         try:
-            number1 = int(num)
+            number1 = float(num)
             operation = input("enter the operator: ".title())
-            number2 = int(input("enter the second number: ".title()))
+            number2 = float(input("enter the second number: ".title()))
 
         except ValueError:
             print("Enter the valid values for the numbers i.e digits and operator i.e (+,-,*,/,//,%,**)")

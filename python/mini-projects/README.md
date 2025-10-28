@@ -2,6 +2,14 @@
 
 This directory contains a collection of small, self-contained Python projects, primarily for learning and practicing fundamental programming concepts.
 
+## Mini-Projects Overview
+
+| Project | Description |
+|---|---|
+| [Calculator](#1-calculator-calculatorpy) | A simple command-line calculator application. |
+| [To-Do List Application](#2-to-do-list-application-todo_listpy) | A command-line to-do list application to manage daily tasks. |
+| [Number Guessing Game](#3-number-guessing-game-number_guessing_gamepy) | A program that generates a random number and asks the user to guess it. |
+
 ## Projects
 
 ### 1. Calculator (`calculator.py`)
@@ -36,6 +44,22 @@ python todo_list.py
 - Mark a task as completed.
 - Remove a task from the list.
 
+
+### 3. Number Guessing Game (`number_guessing_game.py`)
+
+#### Description
+A program that generates a random number and asks the user to guess it.
+If the player’s guess is higher than the actual number, the program displays “Lower number please”. Similarly, if the user’s guess is too low, the program prints “higher number please” When the user guesses the correct number, the program displays the number of guesses the player used to arrive at the number.
+
+#### How to Run
+```bash
+python number_guessing_game.py
+```
+
+#### Features
+- Generates a random number between 1 and 100.
+- Provides hints to the user ("Higher" or "Lower").
+- Counts the number of attempts it takes to guess the number.
 
 ### Project Template
 
