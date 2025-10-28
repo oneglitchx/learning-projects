@@ -140,8 +140,16 @@ if __name__ == "__main__":
 class Vector:
     string = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t"
     list_of_string = string.split(',')
-    dimensions_list = []
+    # dimensions_list = []
     def __init__(self, *dimensions):
+        self.dimensions_list = []
+
+        for i in dimensions:
+            if isinstance(i,list):
+                dimensions = i
+
+        # if isinstance(dimensions,list):
+            # dimensions = tuple(dimensions)
         # list_of_string = string.split(',')
         for index, i in enumerate(self.list_of_string):
             if len(dimensions) < index+1:
@@ -156,14 +164,36 @@ class Vector:
             output_list.append(sting)
         return " + ".join(output_list)
     
-    def __add__(self):
-        if len(self.dimensions_list) != len):
+    def __add__(self,obj):
+        if len(self.dimensions_list) != len(obj.dimensions_list):
             return f"The vectors do not have the same dimensions"
         else:
+            added_output_result = []
+            for i in range(0,len(self.dimensions_list)):
+                    a = self.dimensions_list[i] + obj.dimensions_list[i]
+                    added_output_result.append(a)
+            
+            new_vector = Vector(added_output_result)
+            return new_vector
+
+    def __mul__(self, obj):
+        if len(self.dimensions_list) != len(obj.dimensions_list):
+            return f"The vectors do not have the same dimensions"
+        else: 
+            dot_product = 0
+            for i in range(0,len(self.dimensions_list)):
+                a = self.dimensions_list[i] * obj.dimensions_list[i]
+                dot_product += a
+            return dot_product
 
 
 a = Vector(3,3,4,5,6)
-print(a)
+print(f"This is the a: {a}")
+b = Vector(2,3,3,3,5)
+c = Vector(3,4,5)
+print(f"This is c:{c}")
+print(a+b)
+print(a*b)
 
 
 # 6. For the ‘Vector’ class, write the `__str__()` method to print the vector as follows:
