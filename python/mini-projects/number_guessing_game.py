@@ -17,3 +17,4 @@ while True:
     else:
         if user_number == computer_random_number:
             print(f"You gusses the number right in in {iteration} turns.")
+            break
