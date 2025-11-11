@@ -9,6 +9,7 @@ This directory contains a collection of small, self-contained Python projects, p
 | [Calculator](#1-calculator-calculatorpy) | A simple command-line calculator application. |
 | [To-Do List Application](#2-to-do-list-application-todo_listpy) | A command-line to-do list application to manage daily tasks. |
 | [Number Guessing Game](#3-number-guessing-game-number_guessing_gamepy) | A program that generates a random number and asks the user to guess it. |
+| [Rock, Paper, Scissors](#4-rock-paper-scissors-rock_paper_scissorspy) | A classic game of Rock, Paper, Scissors against the computer. |
 
 ## Projects
 
@@ -60,6 +61,26 @@ python number_guessing_game.py
 - Generates a random number between 1 and 100.
 - Provides hints to the user ("Higher" or "Lower").
 - Counts the number of attempts it takes to guess the number.
+
+### 4. Rock, Paper, Scissors (`rock_paper_scissors.py`)
+
+#### Description
+A command-line implementation of the classic game Rock, Paper, Scissors where the user plays against the computer.
+
+#### How to Run
+```bash
+python rock_paper_scissors.py
+```
+
+#### Features
+- Play Rock, Paper, Scissors against the computer.
+- The computer's choice is randomized.
+- Keeps track of the score for each round (win, lose, draw).
+- Allows the user to play multiple rounds (up to 5 chances per game).
+- Stores game history (date, time, and outcome of each attempt) in a `data.json` file.
+- Allows users to view past game scores.
+- User can quit the game at any time by pressing 'q'.
+- User can list scores at any time by pressing 'l'.
 
 ### Project Template
 
