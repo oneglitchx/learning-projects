@@ -60,13 +60,59 @@
 #     print(i)
 # print(a)
 
-import json
-with open('data.json',"r") as f:
-    conDict = json.load(f)
-    dates = []
-    for i in conDict.values():
-        dates.append(i)
-        print(dates)
-    print("this is the lsit")
-    print(dates)
-print(type(conDict))
+# import json
+# with open('data.json',"r") as f:
+#     conDict = json.load(f)
+#     dates = []
+#     for i in conDict.values():
+#         dates.append(i)
+#         print(dates)
+#     print("this is the lsit")
+#     print(dates)
+# print(type(conDict))
+# if n:= len([34,34,34,34,34,34]) > 3:
+    # print(n)
+
+
+# def table(a: int) -> str:
+#     for i in range(1,11):
+#         print(f"{a} X {i} = {a*i}")
+
+# table(3)
+
+# from typing import List, Tuple, Dict
+
+# l : List[int] = [34,34,54,67,3]
+
+# ask = int(input("Enter the number: "))
+# match ask:
+#     case 34:
+#         print("Hey")
+#     case 45:
+#         print("YOU Hell !")
+#     case _:
+#         print("Nothing to to match here!")
+
+# dict1 = {"a": 1, "b": 2}
+# dict2 = {"c": 3, "d": 4}
+# merged = dict1 | dict2
+# print(merged)
+# l = merged.keys()
+# print(l)
+
+# with (
+#     open("data.json") as f1,
+#     # open("") as f2
+# ):
+
+#     contant = f1.read()
+#     print(contant)
+
+# try:
+#     a = int(input("Enter a valid number: "))
+# except Exception as e:
+#     print(e)
+# else:
+#     print("The program was run successfully.")
+
+
