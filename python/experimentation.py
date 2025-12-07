@@ -116,3 +116,42 @@
 #     print("The program was run successfully.")
 
 
+d = {
+    1: {
+        "This is the questions?" : ["hi","hello","The end will be the answer"]
+    },
+    2: {
+        "This is the questions?" : ["These are the options","The end will be the answer"]
+    },
+    3: {
+        "This is the questions?" : ["These are the options","The end will be the answer"]
+    }
+}
+
+
+# print(d.keys())
+# print(d.get(1))
+# print(d.get(1).get("This is the questions?"))
+# print(d.get(1).keys())
+# question = list(d.get(1).keys())
+# a, = question
+# print(a)
+# print(question)
+
+# options = d.get(1).get(a)
+# print(options)
+
+# option_serial = {
+#     1: "a.",
+#     2: "b.",
+#     3: "c.",
+#     4: "d."
+# }
+# for index,i in enumerate(options):
+#     if options[-1] == i:
+#         break 
+#     print(option_serial.get(index),i)
+d.pop(1)
+# for i in d:
+#     print(d.pop())
+print(list(d.keys()))
