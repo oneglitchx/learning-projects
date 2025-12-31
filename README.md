@@ -1,32 +1,32 @@
-# 🧠 Learning Projects
+# Learning Projects
 
-This repository is my personal **learning lab** — a place where I explore programming and computational thinking through practical, hands-on projects.
+A collection of programming exercises, mini-projects, and experiments for learning purposes.
 
-It contains all the small programs, exercises, and experiments I’ve created while learning. Each folder represents a topic, concept, or language I’ve worked on — starting with **Python**, and expanding as I learn more.
+## Structure
 
----
+learning-projects/  
+├── .github/  
+│   ├── commands/  
+│   └── workflows/  
+├── project-ideas/  
+│   └── templates/  
+├── python/  
+│   ├── mini-projects/  
+│   └── resources/  
+├── AGENTS.md  
+├── GEMINI.md  
+└── README.md  
 
-## 📂 Structure
-learning-projects/ ├── python/ │   ├── basics/ │   ├── advance/ │   └── mini-projects/ └── ...
+## Purpose
 
-Each section includes practice code, mini-projects, and experiments that help me understand how things really work under the hood.
+- Hands-on coding practice  
+- Experimentation with concepts  
+- Organized learning repository  
 
----
+## Current Focus
 
-## 💡 Purpose
+- Python mini-projects  
+- Project ideation templates  
+- GitHub automation workflows  
 
-- Learn by building  
-- Document progress and growth  
-- Keep all learning projects organized in one place  
-
----
-
-## ⚙️ Current Focus
-
-**Python 🐍**  
-(Will expand to other languages as I progress)
-
----
-
-> “The best way to learn computation is to build, break, and rebuild.”  
-> — **Mayank Kashyap**
+> "The best way to learn computation is to build, break, and rebuild."
