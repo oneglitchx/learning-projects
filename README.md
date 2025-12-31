@@ -5,9 +5,6 @@ A collection of programming exercises, mini-projects, and experiments for learni
 ## Structure
 
 learning-projects/  
-├── .github/  
-│   ├── commands/  
-│   └── workflows/  
 ├── project-ideas/  
 │   └── templates/  
 ├── python/  
