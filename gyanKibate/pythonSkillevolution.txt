@@ -1,0 +1,193 @@
+Good. Now we’re building a training system, not just asking for random exercises. 🧠⚙️
+
+You already have the Concept Module Prompt (the first one).
+Now I’ll give you the Progressive Skill Evolution Prompt — this one is for leveling up systematically.
+
+Then I’ll explain exactly when to use which one.
+
+
+---
+
+🚀 Progressive Python Skill Evolution Prompt
+
+Use this when you want structured long-term growth.
+
+Act as a senior Python mentor designing a progressive mastery roadmap.
+
+I am currently at this level:
+<BEGINNER / EARLY INTERMEDIATE / INTERMEDIATE / ADVANCED>
+
+Concept focus:
+<INSERT CONCEPT OR TOPIC>
+
+My goal:
+<e.g., build real-world projects, master problem solving, prepare for backend development, etc.>
+
+Design a progressive training system for me that includes:
+
+1. Skill Diagnosis
+   - What I should already know at this level.
+   - Common weaknesses at this stage.
+   - Warning signs that I am faking understanding.
+
+2. Layered Learning Plan
+   Break learning into 4 stages:
+   - Stage 1: Foundation Strengthening
+   - Stage 2: Controlled Complexity
+   - Stage 3: Integration with Other Concepts
+   - Stage 4: Real-world Application
+
+3. Progressive Exercises
+   - 5 easy problems
+   - 5 moderate problems
+   - 5 hard problems
+   - 2 system-level problems
+
+   Each level must increase cognitive demand.
+   No solutions unless I ask.
+
+4. Skill Escalation Rules
+   - How to know when to move to the next difficulty.
+   - Metrics to evaluate myself.
+
+5. Failure Handling
+   - What to do when stuck.
+   - How to debug thinking, not just code.
+
+6. Mastery Test
+   - One challenge that proves real understanding.
+
+Do NOT give generic advice.
+Be specific and demanding.
+Focus on real skill-building.
+
+
+---
+
+🧭 When To Use Which Prompt
+
+Now this is important. If you use them randomly, you waste power.
+
+🔹 Use the FIRST Prompt (Concept Module Prompt) When:
+
+You are learning something new.
+
+Example:
+
+“I want to learn generators.”
+
+“I want to understand decorators.”
+
+“I’m starting recursion.”
+
+
+It gives:
+
+Definitions
+
+Terms
+
+Structured exercises
+
+Concept clarity
+
+
+Think of it as:
+Zoom in → Understand one tool deeply.
+
+
+---
+
+🔹 Use the SECOND Prompt (Progressive Mastery Prompt) When:
+
+You already know basics but feel stuck or plateaued.
+
+Example:
+
+“I know lists, loops, functions… but I don’t feel strong.”
+
+“I’ve been coding for 2 years but still hesitate.”
+
+“I want to move from beginner to intermediate.”
+
+
+It gives:
+
+Diagnosis
+
+Difficulty scaling
+
+Cognitive stress training
+
+Real evaluation metrics
+
+
+Think of it as:
+Zoom out → Build long-term strength.
+
+
+---
+
+🧠 Strategic Usage Pattern (This Is What You Should Do)
+
+Since I know you tend to overthink fundamentals and delay execution, here’s the optimal cycle:
+
+1. Pick ONE concept.
+
+
+2. Use Prompt #1.
+
+
+3. Practice.
+
+
+4. Build a mini project.
+
+
+5. Then use Prompt #2 on that same concept to test depth.
+
+
+6. Move on.
+
+
+
+That prevents:
+
+Endless planning
+
+Endless relearning
+
+Fake confidence
+
+Tutorial addiction
+
+
+
+---
+
+⚔️ Brutal Truth
+
+You don’t lack knowledge. You lack deliberate difficulty exposure.
+
+Skill only grows when:
+
+Problems feel slightly uncomfortable.
+
+You can’t immediately see the solution.
+
+You wrestle with bugs without panic.
+
+
+That’s the arena.
+
+
+---
+
+If you want, I can now design:
+
+A 6-month Python domination roadmap
+
+Or a “From INTP planner to ruthless builder” coding discipline system
+
+
+Choose your upgrade.
