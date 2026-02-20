@@ -18,13 +18,16 @@ def init_db():
     CREATE TABEL reviews(id INTEGER PRIMARY KEY, card_id INTEGER , quality INTEGER, timestamp TEXT, old_ease REAL, old_repetitions INTEGER, old_interval INTEGER
     """)
 
-def test_init_db():
-    pass
 def add_cards(deck_id,front,back):
     cur.execute("INSERT INTO cards(front, back) VALUES (?,?)", (front,back))
 
 def due_card(date):
     cur.execute("SELECT * FROM cards WHERE due_date <= ?",(date,))
 
+def test_card_creation():
+    init_db()
+    cur.execute("SELECT name FORM sqlite_master")
+    tables = fetchall()
+    print(tables)
 
-
+test_card_creation()
