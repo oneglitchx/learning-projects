@@ -30,4 +30,4 @@ learning-projects/
 - GitHub automation workflows  
 
 > "The best way to learn computation is to build, break, and rebuild."
--_-
+-_- :)
