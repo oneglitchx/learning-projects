@@ -225,26 +225,92 @@ Calculate birth year (approx)
 # print(f"The total number of vowel: {sum}")
 
 
-list = [1,2,3,4,5]
-# print(list.index(2))
-condition = []
-for i in range(0,len(list)):
-    for d in list:
-        if list[i] >= d:
-            condition.append("T")
-            print(i,d)
-        else:
-            condition.append("F")
-        print(condition)
-        if condition.count("F") == 0:
-            print(condition)
-            print(f"{i} is the largest number.") 
-        else:
-            condition = []
+# list = [5,7,2,8,1,69]
+# # print(list.index(2))
+# condition = []
+# for i in range(0,len(list)):
+#     for d in list:
+#         if list[i] >= d:
+#             condition.append("T")             # Nice qusetion...
+#         else:
+#             condition.append("F")
+#     # print(condition)
+#     if not("F" in condition):
+#         print(f"{list[i]} is the largest number....")
+#     condition = []
 
 
+# string = input("Enter any text: ")
+# l = []
+# for i in string:
+#     l.append(i)
+# l.reverse()
+# st = ""
+# for i in l:
+#     st = st + i    
+# print(st)
 
-# a = [True,True,True]
-# for i in a:
-#     print(i)
-# print(a.count(False))
+# for i in range(1,5):
+#     print(i*"*")
+
+# Number guessing game.......
+# import random
+# # print(cu_num)
+# while True:
+#     cu_num = random.randint(1,100)
+#     user_num = input("Enter the guess number (press 'q' to quit): ")
+#     if user_num == "q":
+#         print("Exititng game.........")
+#         break
+#     if cu_num == int(user_num) :
+#         print(f"The guess was correct and the number is {cu_num}")
+#     else:
+#         print(f"The guess number is incorrect and the number is {cu_num}")
+        
+# Factorial using while.....
+# n = int(input("Enter the number for factorial...: "))
+# l = 1
+# while True:
+#     if n == 0 :
+#         break
+#     l = l * n
+#     n = n - 1
+#     # print(n)
+# print(l)    
+
+# def factorial():
+#     n = int(input("Enter the number for factorial...: "))
+#     l = 1
+#     while True:
+#         if n == 0 :
+#             n = l
+#             l = 1
+#             # break
+#         l = l * n
+#         print(l)
+#         n = n - 1
+#     # n = l
+#     # print(n)
+#     print(l) 
+       
+
+# factorial()
+
+# to check the wheither the number is prime or not ....
+
+# number = int(input("Enter the number: "))
+# if number == 2:
+#     print("The number is prime...")
+# elif number == 1:
+#     print("1 is neither prime nor composite..")
+
+# else:
+#     for i in range(2,number):
+#         if number % i == 0:
+#             print("This number is not prime...")
+#             break
+#     else:
+#         print("This number is prime..")
+        
+
+# fibbonachi series...
