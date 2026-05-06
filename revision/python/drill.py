@@ -314,3 +314,30 @@ Calculate birth year (approx)
         
 
 # fibbonachi series...
+ask = int(input("Enter the number: "))
+fibbonachi_num_series = []
+preciding_num1 = 0
+preciding_num2 = 1
+for i in range(1,ask): 
+    # print("The index",i)
+    if i == 1:
+        fibbonachi_num_series.append(0)
+    summation = preciding_num1 + preciding_num2 
+    fibbonachi_num_series.append(summation)
+    # print("The summation value",summation)
+    preciding_num1 = preciding_num2
+    # print("The precidintnum1",preciding_num1)
+    preciding_num2 = summation
+    # print("precidingnum2", preciding_num2)
+    # print("The list...",fibbonachi_num_series)
+fibbonachi_num_series.insert(1,1)
+print(fibbonachi_num_series)
+    
+# count the even number in the list
+
+list = [1,2,3,4,5,6,8,10,9]
+n = 0
+for index,i in enumerate(list):
+    if list[index] %2 == 0:
+        n = n +1
+print(n)
