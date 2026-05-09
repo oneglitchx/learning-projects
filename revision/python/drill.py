@@ -314,30 +314,121 @@ Calculate birth year (approx)
         
 
 # fibbonachi series...
-ask = int(input("Enter the number: "))
-fibbonachi_num_series = []
-preciding_num1 = 0
-preciding_num2 = 1
-for i in range(1,ask): 
-    # print("The index",i)
-    if i == 1:
-        fibbonachi_num_series.append(0)
-    summation = preciding_num1 + preciding_num2 
-    fibbonachi_num_series.append(summation)
-    # print("The summation value",summation)
-    preciding_num1 = preciding_num2
-    # print("The precidintnum1",preciding_num1)
-    preciding_num2 = summation
-    # print("precidingnum2", preciding_num2)
-    # print("The list...",fibbonachi_num_series)
-fibbonachi_num_series.insert(1,1)
-print(fibbonachi_num_series)
+# ask = int(input("Enter the number: "))
+# fibbonachi_num_series = []
+# preciding_num1 = 0
+# preciding_num2 = 1
+# for i in range(1,ask): 
+#     # print("The index",i)
+#     if i == 1:
+#         fibbonachi_num_series.append(0)
+#     summation = preciding_num1 + preciding_num2 
+#     fibbonachi_num_series.append(summation)
+#     # print("The summation value",summation)
+#     preciding_num1 = preciding_num2
+#     # print("The precidintnum1",preciding_num1)
+#     preciding_num2 = summation
+#     # print("precidingnum2", preciding_num2)
+#     # print("The list...",fibbonachi_num_series)
+# fibbonachi_num_series.insert(1,1)
+# print(fibbonachi_num_series)
     
-# count the even number in the list
+# # count the even number in the list
 
-list = [1,2,3,4,5,6,8,10,9]
-n = 0
-for index,i in enumerate(list):
-    if list[index] %2 == 0:
-        n = n +1
-print(n)
+# list = [1,2,3,4,5,6,8,10,9]
+# n = 0
+# for index,i in enumerate(list):
+#     if list[index] %2 == 0:
+#         n = n +1
+# print(n) 
+
+# Removing all white spaces using loop
+# text = input("Enter the text: ")
+# l = []
+# for i in text:
+#     if i == " ":
+#         continue
+#     l.append(i)
+# print(l)
+
+# st = ""
+# for i in l:
+#     st = st + i
+
+# print(st)
+
+# printing all number which divides by 7 but not 5 
+# till_which_no = int(input("Enter the numcer till which u want to find out the divisibility:"))
+# l = []
+# for i in range(1,till_which_no+1):
+#     if i % 7 == 0 and i%5 != 0:
+#         l.append(i)
+# print(l)
+
+# simulating login system...
+# user_base = {
+#     "Darklord":"Fambro69"
+# }
+
+# def add_user(username,password):
+#     user_base[username] = password
+
+# def del_user(username):
+#     user_base.pop(username)
+
+# add_user("mayank",69)
+# del_user("mayank")
+# print(user_base)
+
+# for i in range(1,4):
+#     print(f"Attempted for login: {i} \nTotal attempt: 3")
+#     usr_name = input("User Name: ")
+#     passwd = input("Password: ")
+#     if usr_name in user_base.keys() and user_base[usr_name] == passwd:
+#         print("Access Granted!!")
+#         print(f"Welcome back: {usr_name}")
+#         break
+#     if usr_name in user_base.keys() and user_base[usr_name] != passwd:
+#         print("Incorrect password")
+    
+#     if not (usr_name in user_base.keys()):
+#         print("User not found!!")
+    
+# Find common elements between two lists:
+# l1 = [1,3,4,5,1,1,1]
+# l2 = [7,3,45,1,1,1]
+
+# common_elements = []
+# for i in l1:
+
+#     if i in l2 and i in common_elements:
+#         continue
+#     if i in l2:
+#         common_elements.append(i)
+# print(f"The common elements are: {common_elements}")
+
+# Multiplication tale 1 to 10:
+# number = int(input("Enter number for the table: "))
+# for i in range(1,11):
+#     print(f"{number} X {i} = {number*i}")
+
+# Find the second largest number in the list: 
+l = [1,3,4,5,7,3,2342342,4,5,55,34,234,345,23]
+def second_lar():
+    i = l[0]
+    for item in l:
+        if l[i] > item:
+            pass
+        else:
+            i = l.index(item)
+    l.remove(item)
+    new_l = l
+    i = new_l[0]
+    for item in new_l:
+        if new_l[i] > item:
+            pass
+        else:
+            i = new_l.index(item)
+    print(new_l[i])
+
+second_lar()

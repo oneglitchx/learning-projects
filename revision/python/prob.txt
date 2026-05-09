@@ -577,10 +577,10 @@ Print Fibonacci series up to N.
 Count how many even numbers in a list.
 Remove all spaces from a string using loop.
 Print all numbers divisible by 7 but not 5.
-Menu-driven program using while and if.
+Menu-driven program using while and if.    ???????? what does it mean...
 Simulate login system (3 attempts).
 Find common elements between two lists.
-Sum digits of a number using loop.
+Sum digits of a number using loop.       ???? what does it mean...
 Print multiplication tables from 1 to 10.
 Find second largest number in list.
 Check if string contains only digits.
