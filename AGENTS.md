@@ -6,8 +6,8 @@ This file provides guidelines and commands for agents working in this repository
 
 Since this is a Python project with mini-projects (scripts), there are no build commands. Run individual scripts directly with Python:
 
-- Run a specific mini-project: `python python/mini-projects/calculator.py`
-- Run experimentation: `python python/experimentation.py`
+- Run a specific mini-project: `python code/mini-projects/calculator.py`
+- Run experimentation: `python code/playground.py`
 
 If adding a package later, install dependencies (if requirements.txt is added): `pip install -r requirements.txt`
 
@@ -26,7 +26,7 @@ Run linting before committing: `flake8 . && black --check .`
 No tests are currently present in the codebase. When adding tests, use pytest:
 
 - Run all tests: `pytest`
-- Run tests in a specific directory: `pytest python/mini-projects/`
+- Run tests in a specific directory: `pytest code/mini-projects/`
 - Run a single test: `pytest test_file.py::test_function_name` (replace with actual file and function)
 - Run tests with coverage: `pytest --cov=.`
 

@@ -1,6 +1,6 @@
-[submodule "python/resources/learn-python"]
-	path = python/resources/learn-python
+[submodule "notes/resources/learn-python"]
+	path = notes/resources/learn-python
 	url = https://github.com/trekhleb/learn-python.git
-[submodule "python/resources/Python"]
-	path = python/resources/Python
+[submodule "notes/resources/Python"]
+	path = notes/resources/Python
 	url = https://github.com/geekcomputers/Python.git

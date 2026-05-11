@@ -1,33 +1,39 @@
 # Learning Projects
 
-A collection of programming exercises, mini-projects, and experiments for learning purposes.
+My personal programming playground — code experiments, mini-projects, notes, and roadmaps for learning software engineering, AI/ML, and robotics.
 
 ## Structure
 
-learning-projects/  
-├── .github/  
-│   ├── commands/  
-│   └── workflows/  
-├── project-ideas/  
-│   └── templates/  
-├── python/  
-│   ├── mini-projects/  
-│   └── resources/  
-├── AGENTS.md  
-├── GEMINI.md  
-└── README.md  
+```
+learning-projects/
+├── code/                    # Everything runnable
+│   ├── playground.py        # Quick experiments & scratchpad
+│   ├── mini-projects/       # Finished small apps
+│   │   ├── calculator.py
+│   │   ├── number_guessing_game.py
+│   │   ├── todo_list.py
+│   │   ├── quiz.py
+│   │   ├── rock_paper_scissors.py
+│   │   └── flashcards/      # In-progress spaced-repetition project
+│   └── projects/            # Bigger in-progress projects
+├── notes/                   # All text resources & documentation
+│   ├── strategies/          # Learning prompts & training protocols
+│   ├── roadmaps/            # PRDs, project plans, templates
+│   ├── resources/           # Git submodules (learn-python, Python)
+│   └── GEMINI.md
+├── revision/                # Quick revision exercises
+├── AGENTS.md                # AI assistant guidelines
+└── README.md
+```
 
-## Purpose
+## Quick Start
 
-- Hands-on coding practice  
-- Experimentation with concepts  
-- Organized learning repository  
+```bash
+# Run any mini-project
+python code/mini-projects/calculator.py
 
-## Current Focus
-
-- Python mini-projects  
-- Project ideation templates  
-- GitHub automation workflows  
+# Open playground
+python code/playground.py
+```
 
 > "The best way to learn computation is to build, break, and rebuild."
--_- :)
