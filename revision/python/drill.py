@@ -188,10 +188,10 @@ Calculate birth year (approx)
 
 # num = int(input("Enter the number: "))
 
-# if (num == 0 or num > 0) and num < 50:                       doubt........
+# if (num == 0 or num > 0) and num < 50:                       #doubt........
 #     print("The number is in the range of 0 to 50..") 
-#     if (num == 50 or num > 50) and num < 100:
-#         print("The number is in the range of 50 to 100..") 
+# elif (num == 50 or num > 50) and num < 100:
+#     print("The number is in the range of 50 to 100..") 
 
 
 # ---------------password checker doubt..........
@@ -255,9 +255,9 @@ Calculate birth year (approx)
 
 # Number guessing game.......
 # import random
-# # print(cu_num)
+# cu_num = random.randint(1,100)
+# print(cu_num)
 # while True:
-#     cu_num = random.randint(1,100)
 #     user_num = input("Enter the guess number (press 'q' to quit): ")
 #     if user_num == "q":
 #         print("Exititng game.........")
@@ -266,6 +266,7 @@ Calculate birth year (approx)
 #         print(f"The guess was correct and the number is {cu_num}")
 #     else:
 #         print(f"The guess number is incorrect and the number is {cu_num}")
+#         break
         
 # Factorial using while.....
 # n = int(input("Enter the number for factorial...: "))
@@ -280,17 +281,14 @@ Calculate birth year (approx)
 
 # def factorial():
 #     n = int(input("Enter the number for factorial...: "))
+
 #     l = 1
 #     while True:
 #         if n == 0 :
-#             n = l
-#             l = 1
-#             # break
+#             break
 #         l = l * n
-#         print(l)
 #         n = n - 1
-#     # n = l
-#     # print(n)
+#         # print(n)
 #     print(l) 
        
 
@@ -313,13 +311,14 @@ Calculate birth year (approx)
 #         print("This number is prime..")
         
 
-# fibbonachi series...
+# # fibbonachi series...
 # ask = int(input("Enter the number: "))
 # fibbonachi_num_series = []
 # preciding_num1 = 0
 # preciding_num2 = 1
-# for i in range(1,ask): 
+# for i in range(1,ask+1): 
 #     # print("The index",i)
+
 #     if i == 1:
 #         fibbonachi_num_series.append(0)
 #     summation = preciding_num1 + preciding_num2 
@@ -330,9 +329,37 @@ Calculate birth year (approx)
 #     preciding_num2 = summation
 #     # print("precidingnum2", preciding_num2)
 #     # print("The list...",fibbonachi_num_series)
-# fibbonachi_num_series.insert(1,1)
+# # fibbonachi_num_series.insert(1,1)
 # print(fibbonachi_num_series)
     
+
+# fibbonachi series...
+
+# n = int(input("Enter the number: "))
+# fibbonachi_num_series = []
+# fisrt_preceding = 0
+# second_preceding = 1
+
+# for i in range(1,n + 1):
+#     if i == 1:
+#         fibbonachi_num_series.append(fisrt_preceding)
+#     if i == 2:
+#         fibbonachi_num_series.append(second_preceding)
+    
+#     else:
+#         summation = fisrt_preceding + second_preceding
+#         fibbonachi_num_series.append(summation)
+
+#         fisrt_preceding = second_preceding
+#         second_preceding = summation
+    
+# print(fibbonachi_num_series)
+
+
+
+
+
+
 # # count the even number in the list
 
 # list = [1,2,3,4,5,6,8,10,9]
@@ -413,22 +440,149 @@ Calculate birth year (approx)
 #     print(f"{number} X {i} = {number*i}")
 
 # Find the second largest number in the list: 
-l = [1,3,4,5,7,3,2342342,4,5,55,34,234,345,23]
-def second_lar():
-    i = l[0]
-    for item in l:
-        if l[i] > item:
-            pass
-        else:
-            i = l.index(item)
-    l.remove(item)
-    new_l = l
-    i = new_l[0]
-    for item in new_l:
-        if new_l[i] > item:
-            pass
-        else:
-            i = new_l.index(item)
-    print(new_l[i])
+# l = [1,8,4,9,5,7]
+# def second_lar():
+#     i = l[0]
+#     for item in l:
+#         if i > item:
+#             pass
+#         else:
+#             i = item
+#     l.remove(i)
+#     new_l = l
+#     i = new_l[0]
+#     for item in new_l:
+#         if i > item:
+#             pass
+#         else:
+#             i = item
+#     print(i)
 
-second_lar()
+# second_lar()
+
+
+"""
+---                                                                      │
+│                                                                                      │
+│             **MODULE 1 — Core Foundations (skippable but do these 2)**               │
+│                                                                                      │
+│             1. `print(bool("False"))` — predict the output first, then run it. Why? 
+The outcome of the the no 1 will be ture cause any value of srring is a value and it is true for the value and the False is  not being used as the pythons inbuild boolen it is being used as the string
+ │
+│             2. `"5" * 3` vs `5 * 3` — what's the difference and why?                 │
+│ here in question no 2 in the first case there is a string 5 and it is multiplied by 3 which will multiply the string 3 times and in the second case there are 2 numbers which will be multiplied as any two integer number will be                                                 │
+│             ---                                                                      │
+│                                                                                      │
+│             **MODULE 2 — Control Flow (do all of these)**                            │
+│                                                                                      │
+│             **Bugs to fix in your existing code:**                                   │
+│                                                                                      │
+│             1. **Nested range check (line 191-194)** — currently broken. A number    │
+│ can't be in both 0-50 AND 50-100. Fix using `elif` or separate non-nested checks.    │
+│                                                                                      │
+│             2. **Second largest (line 415-434)** — `i = l[0]` stores the *value*,    │
+│ not the *index*. Then `l[i]` uses that value as an index. Works by accident on your  │
+│ test list. Fix it to use proper index tracking.                                      │
+│                                                                                      │
+│             3. **Guessing game (line 259-268)** — `random.randint()` is INSIDE the   │
+│ loop, so the number changes every guess. Move it before `while True:`.               │
+│                                                                                      │
+│             4. **Fibonacci (line 316-334)** — works but relies on `insert(1,1)` hack │
+│ at the end. Rewrite the loop so the series is generated naturally without that.      │
+│                                                                                      │
+│             5. **Factorial function (line 281-297)** — infinite loop bug. When `n == │
+│ 0`, you reset `n = l` and `l = 1`, but the loop never breaks. The standalone version │
+│ (line 270-279) is correct — use that approach.                                       │
+│                                                                                      │
+│             ---                                                                      │
+│                                                                                      │
+│             **Missing exercises to write new:**                                      │
+│                                                                                      │
+│             6. **Sum digits of a number** — e.g., input `1234` → output `10`         │
+│ (1+2+3+4). Use a loop with `%` and `//`.                                             │
+│                                                                                      │
+│             7. **Check if string contains only digits** — e.g., `"12345"` → yes,     │
+│ `"12a45"` → no. No `str.isallowed()` — use a loop.                                   │
+│                                                                                      │
+│             8. **Menu-driven program** — while loop that shows:                      │
+│                - Press 1: do X                                                       │
+│                - Press 2: do Y                                                       │
+│                - Press 3: quit                                                       │
+│                Keeps running until user picks quit. (This is the backbone of every   │
+│ CLI app.)                                                                            │
+│                                                                                      │
+│             9. **Simple ATM System** — start with balance = 1000. Menu:              │
+│                - Check balance                                                       │
+│                - Deposit (add to balance)                                            │
+│                - Withdraw (subtract, but don't allow if insufficient)                │
+│                - Exit                                                                │
+│                Uses while loop + if-elif. Combines everything you've learned.        │
+│                                                                                      │
+│             ---   
+"""
+# Sum digits of a number
+# number = input("Enter the number: ")
+# n = 0
+# for i in number:
+#     n = int(i) + n
+
+# print(n)
+
+# Check if string contains only digits
+# string = input("Enter the string: ")
+# print(string.isdigit())
+
+# Menu-driven program (restraunt editon)
+
+menu = """
+1. momos
+2. egg role
+3. biryani
+4. choumin              (press 'q' to quit)
+5. chiken lolipon       (press 'rq' to place order)
+6. Masala dosa
+"""
+
+# print(menu.capitalize())
+# l = []
+# while True:
+#     order = input("Add the dish : ")
+#     if order == "q":
+#         break
+#     if order == "rq":
+#         print("Order placed ")
+#         print(f'You ordered dish: {l}')
+#         break
+
+#     l.append(order)
+
+
+# Simple ATM System
+balance = 1000
+commands = """
+c --> check balance
+d --> deposit amount
+w --> withdraw amout
+q --> quit interface
+"""
+print(commands)
+while True:
+    query = input("Enter the operrations: ")
+    if query == "c":
+        print(balance)
+    elif query == "d":
+        amout = int(input("Enter the amount to deposit: "))
+        balance = balance + amout
+        print(f"Amount {amout} was deposited to your account")
+        print(f"Now the current balance: {balance}")
+    elif query == "w":
+        amount = int(input("Enter the amount to withdraw: "))
+        if (balance - amount) < 100: 
+            print("Cannot withdraw... The bank blance should be atlest 100 rs...")
+        else:
+            balance = balance - amount
+            print(f"Amount {amount} was withdrawl from your account")
+            print(f"Now the current balance: {balance}")
+    elif query == "q":
+        print("Shutting down the system interface.......:)\nLamo XD")
+        break

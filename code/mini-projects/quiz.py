@@ -6,7 +6,7 @@ import json
 def exists_quiz_file():
     if not(os.path.exists("quiz.json")):
         with open("quiz.json", "w") as f:
-            a = {}
+            a = {
             json.dump(a,f)
     else:
         with open("quiz.json",'r') as f:
